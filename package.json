@@ -1,0 +1,24 @@
+{
+  "name": "spa-routing-demos",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "node_modules/@esbuild/darwin-arm64/bin/esbuild --bundle src/app.tsx --outfile=www/app.js",
+    "start": "npm run build -- --servedir=www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.24.0"
+  },
+  "devDependencies": {
+    "@esbuild/darwin-arm64": "^0.22.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "typescript": "^5.5.2"
+  }
+}
