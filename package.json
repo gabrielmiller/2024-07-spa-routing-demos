@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "build": "node_modules/@esbuild/darwin-arm64/bin/esbuild --bundle src/app.tsx --outfile=www/app.js",
-    "start": "npm run build -- --servedir=www",
+    "start": "npm run build -- --servedir=www --serve-fallback=www/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
